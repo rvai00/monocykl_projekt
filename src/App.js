@@ -7,6 +7,7 @@ function App() {
     <div>Oli Wasiuk</div>
     <div>Dawid Pawlak</div>
     <div>Hanna Hryshkevich</div>
+    <div>Nina Niewińska</div>
     </div>
   );
 }
