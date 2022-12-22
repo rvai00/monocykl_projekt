@@ -6,6 +6,7 @@ function App() {
     <div className="App">
     <div>Oli Wasiuk</div>
     <div>Dawid Pawlak</div>
+    <div>Hanna Hryshkevich</div>
     </div>
   );
 }
