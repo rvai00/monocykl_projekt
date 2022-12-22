@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
     <div>Oli Wasiuk</div>
-	<div>Dawid Pawlak</div>
+    <div>Dawid Pawlak</div>
     </div>
   );
 }
