@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 
+
 function App() {
-  return (
+  const name = "Oli Wasiuk" 
+    return (
     <div className="App">
-    <div>Oli Wasiuk</div>
+    <div> {name} </div>
     </div>
   );
 }
