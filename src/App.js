@@ -8,6 +8,7 @@ function App() {
     <div>Dawid Pawlak</div>
     <div>Hanna Hryshkevich</div>
     <div>Nina Niewińska</div>
+    <div>Agata Sawicka</div>
     </div>
   );
 }
