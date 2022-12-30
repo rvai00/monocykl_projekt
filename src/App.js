@@ -6,6 +6,11 @@ const updateNameHanna = (name_hanna) => {
   return updatedNameHanna
 }
 
+const updateNameAgata = (name_agata) => {
+  const updatedNameAgata = name_agata + "240"
+  return updatedNameAgata
+}
+
 const generateDawid = (name, surname) => {
     return {name: name, surname: surname};
 }
@@ -22,8 +27,7 @@ function App() {
     <div>{updateNameHanna(name_hanna)}</div>
     <div>{name_nina}</div>
     <div>{dawid.name + " " + dawid.surname}</div>
-    <div>{name_agata}</div>
-    </div>
+    <div>{updateNameAgata(name_agata)}</div>
   );
 }
 
