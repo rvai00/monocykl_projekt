@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 
+const updateNameHanna = (name_hanna) => {
+  const updatedNameHanna = name_hanna + "123"
+  return updatedNameHanna
+}
 
 function App() {
   const name = "Oli Wasiuk" 
@@ -11,7 +15,7 @@ function App() {
     return (
     <div className="App">
     <div> {name} </div>
-    <div>{name_hanna}</div>
+    <div>{updateNameHanna(name_hanna)}</div>
     <div>{name_nina}</div>
     <div>{name_dawid}</div>
     <div>{name_agata}</div>
