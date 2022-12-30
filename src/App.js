@@ -6,6 +6,11 @@ const updateNameHanna = (name_hanna) => {
   return updatedNameHanna
 }
 
+const updateNameAgata = (name_agata) => {
+  const updatedNameAgata = name_agata + "240"
+  return updatedNameAgata
+}
+
 function App() {
   const name = "Oli Wasiuk" 
   const name_hanna = "Hanna Hryshkevich"
@@ -18,7 +23,7 @@ function App() {
     <div>{updateNameHanna(name_hanna)}</div>
     <div>{name_nina}</div>
     <div>{name_dawid}</div>
-    <div>{name_agata}</div>
+    <div>{updateNameAgata(name_agata)}</div>
     </div>
   );
 }
