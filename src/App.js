@@ -15,6 +15,11 @@ const generateDawid = (name, surname) => {
     return {name: name, surname: surname};
 }
 
+const updateNameNina = (name_nina) => {
+  const updatedNameNina = name_nina + "2137"
+  return updatedNameNina
+}
+
 function App() {
   const name = "Oli Wasiuk" 
   const name_hanna = "Hanna Hryshkevich"
@@ -25,9 +30,10 @@ function App() {
     <div className="App">
     <div> {name} </div>
     <div>{updateNameHanna(name_hanna)}</div>
-    <div>{name_nina}</div>
+    <div>{updateNameNina(name_nina)}</div>
     <div>{dawid.name + " " + dawid.surname}</div>
     <div>{updateNameAgata(name_agata)}</div>
+    </div>
   );
 }
 
