@@ -16,7 +16,7 @@ const generateDawid = (name, surname) => {
 }
 
 const updateNameNina = (name_nina) => {
-  const updatedNameNina = name_nina + "2137"
+  const updatedNameNina = name_nina + "213"
   return updatedNameNina
 }
 
