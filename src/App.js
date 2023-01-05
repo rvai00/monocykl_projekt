@@ -11,8 +11,9 @@ const updateNameAgata = (name_agata) => {
   return updatedNameAgata
 }
 
-const generateDawid = (name, surname) => {
-    return {name: name, surname: surname};
+const generateDawid = (input) => {
+    input = input.split(' ');
+    return {name: input[0], surname: input[1]};
 }
 
 const updateNameNina = (name_nina) => {
@@ -25,7 +26,7 @@ function App() {
   const name_hanna = "Hanna Hryshkevich"
   const name_nina = "Nina Niewińska"
   const name_agata = "Agata Sawicka"
-  const dawid = generateDawid("Dawid", "Pawlak");
+  const dawid = generateDawid("Dawid Pawlak");
     return (
     <div className="App">
     <div> {name} </div>
