@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 const updateNameHanna = (name_hanna) => {
-  const updatedNameHanna = name_hanna + "123"
+  const updatedNameHanna = name_hanna.toUpperCase()
   return updatedNameHanna
 }
 
