@@ -9,7 +9,7 @@ const updateNameHanna = (name_hanna) => {
 const updateNameAgata = (name_agata, surname_agata) => {
   const updatedNameAgata = name_agata.bold()
   const updatedSurnameAgata = surname_agata.bold()
-  return {name_agata: updatedNameAgata,surname_agata: updatedSurnameAgata}
+  return {name_agata: updatedNameAgata,surname_agata: updatedSurnameAgata};
 }
 
 const generateDawid = (input) => {
