@@ -7,7 +7,7 @@ const updateNameHanna = (name_hanna) => {
 }
 
 const updateNameAgata = (name_agata) => {
-  const updatedNameAgata = name_agata + "240"
+  const updatedNameAgata = name_agata.bold()
   return updatedNameAgata
 }
 
