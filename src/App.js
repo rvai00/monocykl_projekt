@@ -6,10 +6,9 @@ const updateNameHanna = (name_hanna) => {
   return updatedNameHanna
 }
 
-const updateNameAgata = (name_agata, surname_agata) => {
+const updateNameAgata = (name_agata) => {
   const updatedNameAgata = name_agata.bold()
-  const updatedSurnameAgata = surname_agata.bold()
-  return {name_agata: updatedNameAgata,surname_agata: updatedSurnameAgata};
+  return updatedNameAgata
 }
 
 const generateDawid = (input) => {
@@ -26,8 +25,7 @@ function App() {
   const name = "Oli Wasiuk" 
   const name_hanna = "Hanna Hryshkevich"
   const name_nina = "Nina Niewińska"
-  const name_agata = "Agata"
-  const surname_agata = "Sawicka"
+  const name_agata = "Agata Sawicka"
   const dawid = generateDawid("Dawid Pawlak");
     return (
     <div className="App">
@@ -35,7 +33,7 @@ function App() {
     <div>{updateNameHanna(name_hanna)}</div>
     <div>{updateNameNina(name_nina)}</div>
     <div>{dawid.name + " " + dawid.surname}</div>
-    <div>{updateNameAgata(name_agata, surname_agata)}</div>
+    <div>{updateNameAgata(name_agata)}</div>
     </div>
   );
 }
