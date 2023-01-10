@@ -35,7 +35,7 @@ function App() {
     <div>{updateNameHanna(name_hanna)}</div>
     <div>{updateNameNina(name_nina)}</div>
     <div>{dawid.name + " " + dawid.surname}</div>
-    <div>{updateNameAgata(name_agata + surname_agata)}</div>
+    <div>{updateNameAgata(name_agata, surname_agata)}</div>
     </div>
   );
 }
