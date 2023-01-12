@@ -26,13 +26,10 @@ const updateNameNina = (name_nina) => {
 const updateName = (name, surname) => {
   const newName = name.slice (2,8)
   const newSurname = surname.slice (4,5)
-  return {name: newName,surname: newSurname}
+  return {name: newName,surname: newSurname};
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 31db8aee068cea78d804a0183af3e6b3c43a7273
 function App() {
   const name = "Oli" 
   const surname = "Wasiuk"
@@ -42,11 +39,7 @@ function App() {
   const surname_agata = "Sawicka"
   const agata = updateNameAgata(name_agata, surname_agata);
   const dawid = generateDawid("Dawid Pawlak");
-<<<<<<< HEAD
-  const oli = updateName(name, surname)
-=======
   const oli = updateName(name, surname);
->>>>>>> 31db8aee068cea78d804a0183af3e6b3c43a7273
     return (
     <div className="App">
     <div> {name} </div>
