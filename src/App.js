@@ -2,9 +2,9 @@ import './App.css';
 import {users}  from "./data/users"
 
 console.log(users)
-const updateNameHanna = (name_hanna) => {
+const UpdateNameHanna = (name_hanna) => {
   const updatedNameHanna = name_hanna.toUpperCase()
-  return updatedNameHanna
+  return <div>{updatedNameHanna}</div>
 }
 
 const updateNameAgata = (name_agata, surname_agata) => {
@@ -32,9 +32,10 @@ const updateName = (name, surname) => {
 
 
 function App() {
+
   return (
     <div className="App">
-      {users.map(user => <div>{user.name + " " + user.surname}</div> )}
+      {users.map(user => updateNameHanna(user.name) )}
     </div>
   );
 }
