@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
+import {users}  from "./data/users"
 
-
+console.log(users)
 const updateNameHanna = (name_hanna) => {
   const updatedNameHanna = name_hanna.toUpperCase()
   return updatedNameHanna
@@ -32,27 +32,23 @@ const updateName = (name, surname) => {
 
 
 function App() {
-  const name = "Oli" 
-  const surname = "Wasiuk"
-  const name_hanna = "Hanna Hryshkevich"
-  const name_nina = "Nina" 
-  const surname_nina = "Niewińska"
-  const name_agata = "Agata"
-  const surname_agata = "Sawicka"
-  const agata = updateNameAgata(name_agata, surname_agata);
-  const dawid = generateDawid("Dawid Pawlak");
-  const oli = updateName(name, surname);
-  const nina = updateNameNina(name_nina, surname_nina)
-    return (
+  return (
     <div className="App">
-    <div> {name} </div>
-    <div>{updateNameHanna(name_hanna)}</div>
-    <div>{nina.name_nina + " " + nina.surname_nina}</div>
-    <div>{dawid.name + " " + dawid.surname}</div>
-    <div>{agata.name_agata + " " + agata.surname_agata}</div>
-    <div>{oli.name + " " + oli.surname}</div>
+      {users.map(user => <div>{user.name + " " + user.surname}</div> )}
     </div>
   );
 }
 
 export default App;
+
+// const name = "Oli" 
+// const surname = "Wasiuk"
+// const name_hanna = "Hanna Hryshkevich"
+// const name_nina = "Nina" 
+// const surname_nina = "Niewińska"
+// const name_agata = "Agata"
+// const surname_agata = "Sawicka"
+// const agata = updateNameAgata(name_agata, surname_agata);
+// const dawid = generateDawid("Dawid Pawlak");
+// const oli = updateName(name, surname);
+// const nina = updateNameNina(name_nina, surname_nina)
