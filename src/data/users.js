@@ -1,5 +1,5 @@
 const users = [
-    {name:"1", surname: "2"},
+    {name:"Nina", surname: "Niewińska"},
     {name:"Agata", surname:"Sawicka"},
 
 ]
