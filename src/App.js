@@ -1,9 +1,9 @@
 import './App.css';
 import {users}  from "./data/users"
 
-console.log(users)
-const UpdateNameHanna = (name_hanna) => {
-  const updatedNameHanna = name_hanna.toUpperCase()
+const UpdateNameHanna = (props) => {
+  console.log(props)
+  const updatedNameHanna = props.name.toUpperCase()
   return <div>{updatedNameHanna}</div>
 }
 
@@ -35,7 +35,8 @@ function App() {
 
   return (
     <div className="App">
-      {users.map(user => updateNameHanna(user.name) )}
+      {users.map(user => <UpdateNameHanna name={user.name}/> )}
+
     </div>
   );
 }
