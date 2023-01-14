@@ -13,15 +13,8 @@ const updateNameAgata = (name_agata, surname_agata) => {
   return {name_agata: updatedNameAgata,surname_agata: updatedSurnameAgata};
 }
 
-const generateDawid = (input) => {
-    input = input.split(' ');
-    return {name: input[0], surname: input[1]};
-}
-
-class GenerateDawid extends React.component {
-  render() {
-     return <p>{this.props.user.name + " " + this.props.user.surname}</p>;
-  }
+function GenerateDawid(props) {
+     return <p>{props.user.name.toUpperCase() + " " + props.user.surname}</p>;
 };
 
 const updateNameNina = (name_nina, surname_nina) => {
