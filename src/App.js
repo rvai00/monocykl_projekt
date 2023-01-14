@@ -18,6 +18,12 @@ const generateDawid = (input) => {
     return {name: input[0], surname: input[1]};
 }
 
+class GenerateDawid extends React.component {
+  render() {
+     return <p>{this.props.user.name + " " + this.props.user.surname}</p>;
+  }
+};
+
 const updateNameNina = (name_nina, surname_nina) => {
   const updatedNameNina = name_nina
   const updatedSurnameNina = surname_nina
@@ -36,6 +42,7 @@ function App() {
   return (
     <div className="App">
       {users.map(user => <UpdateNameHanna name={user.name}/> )}
+      {users.map(user => <GenerateDawid user={user}/> )}
 
     </div>
   );
