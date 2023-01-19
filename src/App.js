@@ -3,7 +3,7 @@ import {users}  from "./data/users"
 
 const UpdateNameHanna = (props) => {
   console.log(props)
-  const updatedNameHanna = props.name.toUpperCase() + " " + props.surname.toLowerCase();
+  const updatedNameHanna = props.name.toUpperCase();
   return <div>{updatedNameHanna}</div>
 }
 
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="App">
-      {users.map(user => <UpdateNameHanna user={user}/> )}
+      {users.map(user => <UpdateNameHanna name={user.name}/> )}
       {users.map(user => <GenerateDawid user={user}/> )}
 
     </div>
