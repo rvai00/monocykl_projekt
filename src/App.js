@@ -1,15 +1,11 @@
 import './App.css';
 import {users}  from "./data/users"
+import {Profile} from  "./components/molecules/Profile"
 
 const UpdateNameHanna = (props) => {
   console.log(props)
   const updatedNameHanna = props.name.toUpperCase();
   return <div>{updatedNameHanna}</div>
-}
-
-const UpdateNameAgata = (props) => {
-  const updatedNameAgata = props.name.bold()
-  return <div>{updatedNameAgata}</div>
 }
 
 function GenerateDawid(props) {
@@ -35,7 +31,7 @@ function App() {
     <div className="App">
       {users.map(user => <UpdateNameHanna name={user.name}/> )}
       {users.map(user => <GenerateDawid user={user}/> )}
-      {users.map(user => <UpdateNameAgata name={user.name}/> )}
+      {users.map(user => <Profile user={user}/> )}
 
     </div>
   );
