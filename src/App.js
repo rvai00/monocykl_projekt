@@ -7,10 +7,9 @@ const UpdateNameHanna = (props) => {
   return <div>{updatedNameHanna}</div>
 }
 
-const updateNameAgata = (name_agata, surname_agata) => {
-  const updatedNameAgata = name_agata.bold()
-  const updatedSurnameAgata = surname_agata.bold()
-  return {name_agata: updatedNameAgata,surname_agata: updatedSurnameAgata};
+const UpdateNameAgata = (props) => {
+  const updatedNameAgata = props.name.bold()
+  return <div>{updatedNameAgata}</div>
 }
 
 function GenerateDawid(props) {
@@ -36,6 +35,7 @@ function App() {
     <div className="App">
       {users.map(user => <UpdateNameHanna name={user.name}/> )}
       {users.map(user => <GenerateDawid user={user}/> )}
+      {users.map(user => <UpdateNameAgata name={user.name}/> )}
 
     </div>
   );
