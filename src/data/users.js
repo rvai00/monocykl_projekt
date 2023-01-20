@@ -3,5 +3,6 @@ export const users = [
     {name:"Agata", surname:"Sawicka"},
     {name:"Oli", surname:"Wasiuk"},
     {name:"Dawid", surname:"Pawlak"},
+    {name: "Hanna", surname: "Hryshkevich"},
 
 ]

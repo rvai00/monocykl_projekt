@@ -3,7 +3,7 @@ import {users}  from "./data/users"
 
 const UpdateNameHanna = (props) => {
   console.log(props)
-  const updatedNameHanna = props.name.toUpperCase()
+  const updatedNameHanna = props.name.toUpperCase();
   return <div>{updatedNameHanna}</div>
 }
 
