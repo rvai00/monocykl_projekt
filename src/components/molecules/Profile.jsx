@@ -1,7 +1,8 @@
 import {Name} from  "../atoms/Name"
-import { Badge} from "../atoms/Badge"
+import { Badges} from "../atoms/Badges"
 
 export const Profile = (props) => {
-    console.log(props.user.name)
-    return <div><Name name={props.user.name}/> <Badge/></div>
+    return <div>
+      <Name name={props.user.name}/> 
+    <Badges badges={props.user.badges}/></div>
   }
