@@ -3,6 +3,6 @@ export const users = [
     {name:"Agata", surname:"Sawicka", badges: ["łączność", "setapowiec"]},
     {name:"Oli", surname:"Wasiuk", badges: ["łączność", "setupowiec"]},
     {name:"Dawid", surname:"Pawlak", badges: ["łączność", "setupowiec"]},
-    {name: "Hanna", surname: "Hryshkevich"},
+    {name: "Hanna", surname: "Hryshkevich", badges: ["łączność", "setupowiec"]},
 
 ]
