@@ -5,7 +5,7 @@ import {Profile} from  "./components/molecules/Profile"
 function App() {
 
   return (
-    <div className="App">
+    <div>
       {users.map(user => <Profile user={user}/> )}
 
     </div>
