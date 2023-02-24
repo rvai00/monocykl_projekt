@@ -5,7 +5,9 @@ import { Badges} from "../atoms/Badges"
 export const Profile = (props) => {
     return <StyledWrapper>
       <Name name={props.user.name}/> 
-    <Badges badges={props.user.badges}/></StyledWrapper>
+      <StyledDetails>
+    <Badges badges={props.user.badges}/></StyledDetails>
+    </StyledWrapper>
   }
 
 const StyledWrapper = styled("div")(
@@ -13,12 +15,19 @@ const StyledWrapper = styled("div")(
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    alignItems: "center",
-    border: "1ex solid black",
     paddingInline: "16px",
     paddingBlock: "20px",
-    width: "300px", //;_;
-    margin: "16x",
-    borderRadius: "15px 20px"
+    margin: "16px",
 })
 );
+
+const StyledDetails = styled("div")(
+  ()=>({
+    background: "#FFFFFF",
+    border: "1px solid #000000",
+    borderRadius: "22px",
+    padding: "46px 51px",
+    width: "811px",
+    boxSizing: "border-box"
+  })
+  );
