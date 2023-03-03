@@ -11,7 +11,8 @@ function App() {
 
   return (
     <div>
-      <button onClick={() => setCurrentUser(currentUser - 1) }>W lewo</button>
+      <button onClick={() => setCurrentUser(currentUser - 1) }>Poprzedni</button>
+      <button onClick={() => setCurrentUser(currentUser + 1) }>Następny</button>
       <Profile user={users[currentUser]}/> 
     </div>
   );
