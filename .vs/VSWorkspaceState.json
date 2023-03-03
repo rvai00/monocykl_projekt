@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\atoms"
   ],
   "PreviewInSolutionExplorer": false
 }

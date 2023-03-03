@@ -18,7 +18,10 @@ function App() {
         
           
         } }>Poprzedni</button>
-      <button onClick={() => setCurrentUser(currentUser + 1) }>Następny</button>
+      <button onClick={() => {
+        if(currentUser < users.length - 1)
+            setCurrentUser(currentUser + 1)
+        } }>Następny</button>
       <Profile user={users[currentUser]}/> 
     </div>
   );
