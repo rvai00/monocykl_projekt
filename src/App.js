@@ -7,22 +7,16 @@ function App() {
 
   const [currentUser, setCurrentUser] = useState(0)
 
-  
+  console.log("length", users.length - 2 )
+  console.log("długość", users[users.length - 2])
 
   return (
     <div>
-      <button onClick={() => { 
-        if(currentUser > 0){
-          setCurrentUser(currentUser - 1) 
-        }
-        
-          
-        } }>Poprzedni</button>
-      <button onClick={() => {
-        if(currentUser < users.length - 1)
-            setCurrentUser(currentUser + 1)
-        } }>Następny</button>
-      <Profile user={users[currentUser]}/> 
+      {currentUser > 0  &&  <button onClick={() => setCurrentUser(currentUser - 1)}>Poprzedni</button> } 
+      {currentUser < users.length - 1 &&  <button onClick={() => setCurrentUser(currentUser + 1)}>Następny</button>}
+      
+
+      { [1,2].includes(currentUser)  && <Profile user={users[currentUser]} /> } 
     </div>
   );
 }

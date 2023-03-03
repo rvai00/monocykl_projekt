@@ -4,5 +4,5 @@ export const users = [
     {name:"Oli", surname:"Wasiuk", badges: ["łączność", "setupowiec"], goal: ""},
     {name:"Dawid", surname:"Pawlak", badges: ["łączność", "setupowiec"], goal: ""},
     {name: "Hanna", surname: "Hryshkevich", badges: ["łączność", "setupowiec"], goal: ""},
-
+    
 ]
