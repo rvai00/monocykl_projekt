@@ -1,13 +1,18 @@
 import './App.css';
 import {users}  from "./data/users"
 import {Profile} from  "./components/molecules/Profile"
+import { useState } from 'react';
 
 function App() {
 
+  const [currentUser, setCurrentUser] = useState(2)
+
+
+
   return (
     <div>
-      {users.map(user => <Profile user={user}/> )}
-
+      <button onClick={() => setCurrentUser(currentUser - 1) }>W lewo</button>
+      <Profile user={users[currentUser]}/> 
     </div>
   );
 }

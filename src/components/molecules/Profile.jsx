@@ -1,13 +1,18 @@
 import styled from "styled-components";
 import {Name} from  "../atoms/Name"
 import { Badges} from "../atoms/Badges"
+import { Goal } from "../atoms/Goal";
 
-export const Profile = (props) => {
-    return <StyledWrapper>
-      <Name name={props.user.name}/> 
-      <StyledDetails>
-    <Badges badges={props.user.badges}/></StyledDetails>
-    </StyledWrapper>
+export const Profile = ({user}) => {
+    return (
+      <StyledWrapper>
+        <Name name={user.name}/> 
+        <StyledDetails>
+          <Goal goal={user.goal} />
+          <Badges badges={user.badges}/>
+        </StyledDetails>
+      </StyledWrapper>
+    )
   }
 
 const StyledWrapper = styled("div")(
