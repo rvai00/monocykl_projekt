@@ -7,11 +7,19 @@ function App() {
 
   const [currentUser, setCurrentUser] = useState(2)
 
-
+  
 
   return (
     <div>
-      <button onClick={() => setCurrentUser(currentUser - 1) }>W lewo</button>
+      <button onClick={() => { 
+         if(currentUser === 0){
+           return
+          }
+          
+        setCurrentUser(currentUser - 1) 
+          
+          
+        }}>W lewo</button>
       <Profile user={users[currentUser]}/> 
     </div>
   );
