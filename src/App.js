@@ -5,21 +5,20 @@ import { useState } from 'react';
 
 function App() {
 
-  const [currentUser, setCurrentUser] = useState(2)
+  const [currentUser, setCurrentUser] = useState(0)
 
   
 
   return (
     <div>
       <button onClick={() => { 
-         if(currentUser === 0){
-           return
-          }
+        if(currentUser > 0){
+          setCurrentUser(currentUser - 1) 
+        }
+        
           
-        setCurrentUser(currentUser - 1) 
-          
-          
-        }}>W lewo</button>
+        } }>Poprzedni</button>
+      <button onClick={() => setCurrentUser(currentUser + 1) }>Następny</button>
       <Profile user={users[currentUser]}/> 
     </div>
   );
